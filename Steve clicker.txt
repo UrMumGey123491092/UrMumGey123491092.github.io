@@ -1,0 +1,93 @@
+Let's make a game!
+	name:Steve Clicker
+	by:...
+	desc:This is a idle game based around Minecraft.
+	created:4/23/21
+	updated:4/23/21
+	version:1
+
+Settings
+	background:https://raw.githubusercontent.com/moyaimoment/moyaimoment.github.io/main/download.jpg
+	building cost increase:102%
+	building cost refund:65%
+
+
+Button
+	*hand
+		name:Steves Hand
+		desc:Click this to mine wood!
+		on click:anim icon wobble
+		on click:yield 1 wood
+		icon:https://raw.githubusercontent.com/moyaimoment/moyaimoment.github.io/main/DC3OSi-XgAAqwca.png
+		no text
+		class:bigButton hasFlares
+		icon class:shadowed
+		tooltip origin:bottom
+		tooltip class:red
+		
+Resources 
+	*wood
+		name:wood
+		desc:Use wood to buy tools and wood buildings.
+		show earned
+		class:no background
+		icon:https://github.com/moyaimoment/moyaimoment.github.io/blob/main/download%20(1).jpg?raw=true
+
+Buildings
+	*TEMPLATE
+		on click:anim glow
+
+	*oakSapling
+		name:Oak Sapling
+		on tick:yield 0.1 wood
+		desc:Produces 1 wood every 10 seconds
+		cost:50 wood
+		req:0 wood
+		
+	*birchSapling
+		name:Birch Sapling
+		on tick:yield 1 wood
+		desc:Produces 1 wood every second
+		cost:250 wood
+		req:1 oakSapling
+		cost increase:103%
+
+	
+	*acaciaSapling
+		name:Acacia Sapling
+		on tick:yield 5 wood
+		desc:Produces 5 wood every second
+		cost:1000 wood
+		req:1 birchSapling
+		cost increase:105%
+
+	
+	*spruceSapling
+		name:Spruce Sapling
+		on tick:yield 10 wood
+		desc:Produces 10 wood every second
+		cost:2500 wood
+		req:1 acaciaSapling
+		cost increase:107%
+
+	
+	*darkOakSapling
+		name:Dark Oak Sapling
+		on tick:yield 50 wood
+		desc:Produces 50 wood every second
+		cost:10000 wood
+		req:1 spruceSapling 
+		cost increase:110%
+
+Upgrades 
+
+	*TEMPLATE
+		on click:anim glow
+	
+	*woodenAxe
+		name:Wooden Axe
+		desc:Oak saplings and Clicking is twice as efficient 
+		cost:100 wood
+		req:1 oakSapling
+		hidden when 1 owned
+		
