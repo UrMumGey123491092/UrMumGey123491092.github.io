@@ -1,0 +1,408 @@
+0.2.9
+=======================
+Added:
+-Simple customizable company logos
+-A second, alternative, campaign and the ability to pick a campaign
+-Gameplay settings adjustable when creating a new company
+-Main menu
+-Bankruptcy is accompanied by a news article and actually ends the game now
+-Selectable technology processes
+-5 new PGA sockets, 13 more clock speeds, 45nm process
+-Sound effects for research end, the typing effect in reviews, and to signal the lack of funds
+-New market CPUs (63 if you count the new campaign) & big changes to existing ones
+-Competitors' CPU architectures and laid foundations for player-created ones
+-Save-specific system date and time visible when loading from the main menu (generally redone saving)
+-Typing-out effect for reviews
+-Experimental custom theme colors, including a dark mode preset
+-Basic random CPU names to help choose a name when designing
+-Transitions when loading or starting a new game
+-A confirmation window when trying to load or overwrite a save
+-CPU brands visible in the market
+-Ability to easily view the number of remaining days for CPU designs
+-Brought back the ability to speed up time in the market window
+-Higher resolution UI elements (most of them)
+-Numeric '4' to pause the game (alongside space and '0')
+-Using certain console commands will lower the high score multiplier
+-Alternative Inlet 4000 review if it's the first CPU
+-Game version visible in high scores
+-A warning if you don't have enough money for the chosen marketing campaign
+-The possibility to design CPUs with non-unique names
+-More things referenceable from reviews for future use
+-New console commands
+Reworked:
+-Review window redesign
+-Bank redesign
+-Changed the role of technology processes in the game & tweaked their parameters
+-The way high scores are counted
+-Annual tax - you pay a chunk of your balance at the end of each year if you have over $100k available
+-Major balancing efforts again; changes to clock speeds, difficulty settings, packages, tech processes, research, and competitors
+-Core max clock percentage only affects performance calculation now, you can still set full clock
+-When a player's and a competitor's CPU get released on the same day, prioritize the player's one, and show the competitor's product afterward
+-R&D budget slightly less effective & increased max R&D budget gain
+-Adjustments to reviews' contents + fixed typos
+-Time in the game progresses quicker now
+-Unified rounding for all numbers
+-Increased design time speed bonus for CPU levels
+-Rewritten or retouched most CPU descriptions
+-Slower popularity gain
+-Changed loan 'repayment' to 'interest' in bank
+-Increased the rate at which maximum loan goes up
+-Increased character limits for names
+-Disabled RMB context menus in textboxes
+-Finances textbox now sorts newest events first (instead of ascending by date)
+-Removed the ability to use competitors' company names (again)
+-Research doesn't get unselected after switching tabs in R&D anymore
+-Sound volume backend
+-Slight changes to market window layout
+-Modified the notification at 1 year before the end of the game
+-A ton of backend optimizations & streamlining
+-Opening the console doesn't enable debug mode by default anymore
+-Increased default music volume
+-Textboxes' colors now reset after canceling CPU design window
+-Changes to some console commands and a general clean up
+Fixed:
+-Vertical alignment of most of the text objects in the game
+-Improper fonts for some text objects
+-Pie chart in the market window disappearing after loading a save
+-Custom packages created using the Mod Tool being displayed incorrectly in R&D
+-Things outside of the viewport would be rendered when playing on different aspect ratios
+-Links not working on Linux
+-Full screen switch gets set properly when opening options
+-Many issues related to music
+-News and notifications windows not hiding the menu button
+-Hype display not appearing after loading a save while a CPU wasn't gaining hype
+-The slider in marketing was adjustable while the window itself was still opening
+-Rounding errors in displayed clock speeds under unusual circumstances
+-Popularity doesn't go over 100% for a split second after a marketing campaign anymore
+-Being able to change the filter in products window while looking at statistics of a product
+-Mod-loading-related notifications displaying incorrectly
+-Market slider's value not resetting after loading
+-Other minor visual bugs
+
+0.2.8.3
+=======================
+Added:
+-Company logos in news
+-Ability to speed up the animations in highscores
+-2 new CPUs
+-Feedback on how good your highscore is
+Reworked:
+-A new formula for competitors' CPUs (gives more control over units sold)
+-Made easy less difficult and hard more difficult
+-Tiny adjustments to the player's sale formula
+-Changed the budget button in R&D from a cog to a dollar sign
+Fixed:
+-Projected stats button was clickable even when the product info window was closed
+-Music not playing after loading a save
+-A notification about taxes would show up while the highscore was being counted
+-You weren't able to load a mod made for a different version of HT
+-Product info's price textbox's controls were visible when the product info window was closed
+-You were able to open the pause menu without hiding the context menu
+
+0.2.8.2
+=======================
+Added:
+-Product info window (press on the name of the CPU you're currently designing)
+-130nm to 65nm technological processes
+-Descriptions for a couple of CPUs and 1 new IMM CPU
+-Icons for dual-core research in R&D
+Reworked:
+-General rebalance:
+ -Unit costs for every component are much lower now
+ -Slightly increased maximum loan value
+ -Increased the amount of starting money
+ -Updated competitors' CPUs' sale formula
+ -Tweaked the stats of some competitors' CPUs
+ -Lowered experience and money requirements for research
+ -Competing companies use marketing later on
+ -You earn a little more for every unit sold
+ -Made it easier to achieve higher CPU scores
+ -Lowered minimum CPU price to $20
+-Back-end optimizations which hopefully will streamline the development process of the game and reduce memory usage
+-Removed the strange blank sale window which always appeared after loading
+-Rewrote some texts
+Fixed:
+-Font scaling on higher resolutions
+-Specific clock speeds showing incorrectly in reviews
+-Set full screen if it's enabled on the save you are loading
+-Changing clock unit changes the clock value properly now
+-Empty changelog after loading in some cases
+-Some insignificant typos
+-Sale graph resets properly after loading now
+
+0.2.8.1
+=======================
+Added:
+-High scores - the game ends and counts your score in 2006
+-Option to go full screen
+-Milestones up to dual-core
+-7 new packages & clock speeds up to 60MHz
+-New CPUs from competitors and their respective descriptions
+-Back button in menu to go to creation screen and start a new game
+Reworked:
+-Content of reviews - more feedback for the player
+-Window backgrounds - less resource usage
+-Made the game a little easier - all research is cheaper, reworked the sale formula, and hopefully improved balance
+-Menu animations (should be smoother and not break)
+-Sliders and graphs should look smoother too
+-Buttons in bank
+Fixed:
+-R&D window breaking under certain circumstances
+-Another price exploit
+-Unit prices of competitors' CPUs
+-Changing the tab in R&D unselected research but only visually
+-Milestones tooltips display properly now
+-'Yes' button appearing in notifications it shouldn't appear in
+-Being able to achieve negative score
+-Many lesser bugs I won't bother listing
+
+0.2.8
+=======================
+Added:
+-CPU Cores
+-Mod support (.htmod - check out HT Mod Tool!) and mod management in options
+-PGA type packages
+-New DIP and PLCC packages, more CPU clock research
+-Max clock speeds and supported cores for packages
+-New competitors' CPUs
+-Build quality affecting max clock speed
+-Price affecting review score
+-Industry milestones in Milestones
+-News when competitors release their CPUs (can disable in options)
+-New graph in finances
+-Max R&D budget increases by $300 every 10 years
+-Ability to close the context menu that appears after clicking on currently selling cpu by clicking it again
+-Lines in R&D so it doesn't look empty
+-Price text box turning orange if the price is too low when setting build quality
+-New console commands
+Reworked:
+-Milestones - completely new window
+-Removed slider in R&D and replaced it with WASD/Arrow keys movement or dragging
+-Tweaks to existing competitors' CPUs
+-Tweaks to CPU rating - harder to get a perfect score
+-Tweaks to research - balanced required CPU exp, unlock dates and made them more expensive
+-Can't scroll past research and packages in R&D and package select, both windows scaling with the amount of elements
+-Balanced benefits from tech research
+-CPU profits and R&D budget showing every week instead of daily in finances to avoid flood
+-Research won't progress if you don't have enough money
+-Increased the maximum price for CPUs to 1000
+-Nerfed high hype
+-Build quality slider doesn't go back to 75% every time you open CPU Design
+-Updated Moore's Jazz track from Thes_Gunslingers
+-Renamed 'History' to 'Products'
+Fixed:
+-Random crashes related to autosaving (probably)
+-13th month showing up in finances
+-Popularity going over 100 after a marketing campaign
+-Removed the ability to change time speed in package select
+-Textboxes overlapping the news window
+-Done button in marketing was greyed out when it shouldn't be
+-Context menu not closing when opening finances
+-CPU Sale context menu staying open after CPU goes off the market
+-Finances not updating after opening
+-ESC would close the menu while loading from creation
+
+0.2.7
+=======================
+Added:
+-CPU Package selector
+-3 new competitor CPUs from Element
+-Each CPU in Market has its own assigned color
+-Collapsible sale UI window
+-Ability to cancel CPU design
+-Thes_Gunslingers' musical masterpiece
+-Link to a guide on startup
+-Simple easter eggs
+-Debug mode
+-Dev console with basic commands
+-Ability to set clock speeds with 2 decimal points (ex. 7.44 MHz)
+-Marketing expenses now count to CPU's profit
+-Ability to select and unselect all checkboxes in Marketing by clicking on "Ads" or "Region"
+-Custom sliders in options, CPU design and Marketing
+-Remaining 4 PLCC packages' icons
+-Marketing generating popularity
+-Higher CPU levels decreasing design time
+-A little of randominess to review score
+-Custom .exe icon
+-Confirmation dialog when deleting save data
+-Ability to open/close the menu with ESC
+-Number rounding in Bank
+Reworked:
+-Research from scratch - replaced it with R&D with daily budget; related changes:
+	-Now you have to research 'CPU Development' before being able to design a CPU
+	-Changed some researches & added 1 µm process research
+	-Removed 'through-hole' package
+	-DIP14 and 200kHz clock speed are now default and available after researching 'CPU Development'
+	-Added R&D budget which drains money only when researching; higher budget = faster research progress
+-Reworked sale graph
+-Redone hype calculation & hype now increases gradually
+-'X' buttons in each window instead of cancel buttons
+-Small New Hardware window redesign (you don't have to click 'next' each time)
+-1 MHz now equals 1000 instead of 1024 kHz
+-Packages & clocks rebalance
+-Balanced out build quality (doesn't affect design time among others)
+-Add brand button turning into a checkmark after clicked
+-Autosaving every 3rd month instead of every month
+-Tweaked sale formula (again again again)
+-Smoothened out UI progress bars
+-Small Change Price window redesign + added % change between current and new price
+-Removed GPU tab in history
+-Now you know which CPU generates revenue in Finances ("CPU Sale" -> CPU's name)
+-Various optimizations to reduce CPU usage & changed a lot of stuff behind the scenes
+-Changed lowest clock speed from 200 to 100kHz
+-Changed the default CPU level from 1 to 0
+-Renamed 'sockets' to 'packages'
+Fixed:
+-History not being displayed correctly on later pages
+-Hype from next marketing campaigns not adding up properly
+-Hype UI bar animation
+-Being able to create a brand without a name
+-Being able to open 2 windows at once in some cases
+-Being able to change time speed in some windows
+-Opening Bank or Market wouldn't pause the game
+-Being able to name your company the same as a competing company
+-History buttons not highlighting properly sometimes
+
+0.2.6
+=======================
+Added:
+-Ability to check your previous CPUs' components
+-CPU brands
+-Music - 9 tracks & music volume setting in options
+-Live market share (market updates daily)
+-Ability to set the highest clock speed possible by clicking the text that shows it
+-Clock speed changes when you change its unit (ex. 1024 to 1 when you change to MHz)
+-Ability to disable tax notification
+-Ability to unpause (go back to previous speed) after clicking pause while the game is paused
+-Placeholder window icon and .exe name on desktop release
+-Price text when changing pricing becoming orange when selected price is too low to bring profit
+Reworked:
+-Redone the history window
+-Redesigned CPU design window
+-Tweaked the sale formula
+-Redone competing CPUs' sale formula, making it more fair and balanced
+-Much faster popularity gain
+-Optimized saving (game should save faster and saves take up less space)
+-Lots of backend streamlining
+-Improved feedback on why you can't design a CPU (money turning red when you can't afford it etc.)
+-Changed CPU sale chart from line to bar, should spaz out less
+-Made design and research in top UI larger and easier to read
+-Rewrote the changelog
+-Minor adjustements to the 1MHz CPU event
+-Autosave turned on by default
+-Removed the ability to have multiple CPUs with the same name
+-Changed 'Delete save data' to 'Delete all save data' in options
+-CPU sale fading (should be prettier and smoother)
+-Changed review conditions (reviews should make a bit more sense and provide more feedback)
+-Changed CPU 'development' to 'design'
+-Changed changelog close icon
+Fixed:
+-Crashes on desktop version (mostly...)
+-Review score going over 100
+-Default socket and core not being selected after opening CPU design
+-Market share being displayed incorrectly sometimes
+-Menu button sometimes not re-appearing after closing some windows
+-Things related to starting a new game by loading from a 'No Data' slot
+-Removed the possibilty to bring up the CPU sale context menu when other windows are open
+-Messy number rounding in CPU sale
+-Flashing CPU sale window when overwriting currently selling CPU with a new one
+-Various stuff with context menu (highlighting, selecting 2 at once, going outside the window)
+-Review score animation
+-Typo in review (DPI socket instead of DIP)
+-Changelog animation slowing down when spamming the 'X' button
+
+0.2.5
+=======================
+Added:
+-CPU market and 11 competing CPUs
+-Milestones (achievements); 4 for now
+-Ability to research and develop in parallel
+-2 new marketing campaign types (TV and Internet)
+-Total annual expenses and income in finances
+-Count up effect to total score in reviews
+Reworked:
+-Develop & research UI (radial progress bars)
+-Replaced cheaper & shorter CPU development research with technological processes
+Fixed:
+-Many minor bug fixes (weird number rounding among others)
+
+0.2.4
+=======================
+Added:
+-Ability to change CPU's pricing while it's selling
+-Back button when loading from creation window
+-After closing popup menu, the previous time speed will be applied
+-Animations to the small popup menu after clicking currently selling CPU's name
+-Rounding of big numbers in marketing and research
+-Author and version number in creation window
+Reworked:
+-Many boring tweaks, optimizations and changes to game functions and stuff
+Fixed:
+-Marketing checkboxes not unchecking when canceling & money exploit connected to it
+-Losing all research after loading
+-3MHz clock research never being available to research
+
+0.2.3
+=======================
+Added:
+-Ability to load from company creation screen
+-Notification warning user when CPU price is too low
+-New images for CPUs
+-Option to round big numbers (not all, but most of them)
+-5 new sockets & tweaked existing ones
+Reworked:
+-Small options window redesign, switches can now be clicked on (instead of only the switch ball)
+-Tweaked research times and costs
+Fixed:
+-Bug when loading where money and date wouldn't update
+-Various other small tweaks and fixes
+
+0.2.2
+=======================
+Added:
+-Ability to take CPU from market
+-Price textbox turns orange when price is too low to make profit
+-Possibility to start a new game (load from a - No Data - slot)
+Fixed:
+-Various small things
+
+0.2.1
+=======================
+Added:
+-Finance tab (click the money display)
+Reworked:
+-Major CPU sale algorithm changes
+-Redone CPU parts' stats
+-Small marketing tweaks
+-Visual updates (better animations, custom checkboxes, etc.)
+-Tiny changes in reviews
+Fixed:
+-Various not really important stuff
+
+0.2.0
+=======================
+Added:
+-Animations
+-In-game changelog (hi!)
+-Yearly tax
+-Marketing
+-More CPU research & features
+-News & Notifications
+-Popularity decreasing over time
+Reworked:
+-Major CPU research tweaks
+-Small visual tweaks
+-Tweaked sales & review scores
+-Code tweaks and rewrites
+Fixed:
+-Autosaving
+-Fonts (Lato webfont)
+
+0.1.0
+=======================
+*Initial Release*
+-CPU design/development
+-CPU sale
+-CPU research
+-Bank
+-History
