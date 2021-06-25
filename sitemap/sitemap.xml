@@ -7,6 +7,13 @@
     <changefreq>always</changefreq>
     <priority>0.2</priority>
   </url>
+
+  <url>
+    <loc> https://moyaimoment.github.io/sus</loc>
+    <lastmod>2021-06-25</lastmod>
+    <changefreq>always</changefreq>
+    <priority>0.2</priority>
+  </url>
   <url>
     <loc>https://moyaimoment.github.io/games/Tetris/Tetris.html</loc>
     <lastmod>2021-06-07</lastmod>
